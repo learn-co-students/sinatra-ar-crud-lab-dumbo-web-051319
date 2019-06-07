@@ -1,0 +1,5 @@
+<h1>Iron News</h1>
+<% @articles.each do |article| %>
+  <li> <%= article.title %> </li>
+  <li> <%= article.content[0..50] %> </li>
+<% end %>
